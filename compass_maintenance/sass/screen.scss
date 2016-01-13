@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*
+Dernière édition : Wed Jan 13 2016
+
+Copyright (c) nucronisme <nucronisme@gmail.com>
+
+Tous les fichiers et / ou le projet sont soumis
+à la licence MIT (The MIT License).
+Vous êtes priés de la respecter, quelque soit
+votre objectif.
+Plus d'informations sur cette licence ici :
+https://www.moo.com/fr/about/fonts/licences/mit-licence.html
+
+"Ce n'est pas l'homme qui arrête le temps,
+c'est le temps qui arrête l'homme." — François René Chateaubriand
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import "compass";
+
+$main_color: purple;
+$text_color: white;
+
+@mixin inside_wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    margin-top: 200px;
+}
+
+body {
+    font-family: "Roboto", serif;
+    color: $text_color; background: $main_color;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background: lighten($main_color, 10%);
+    height: 35px;
+    
+    span {
+        display: inline-block;
+        font-size: 20px;
+        height: 35px;
+        position: relative;
+        top: 5px; left: 20px;
+    }
+}
+
+#main_wrapper {
+    width: 90%; margin: auto;
+    
+}
+
+#left_col {
+    @include inside_wrapper;
+    
+    h1 {
+        font-weight: bold;
+        font-size: 3em;
+        margin: 0;
+    }
+    h3 {
+        margin-left: 20px;
+    }
+    p {
+        font-style: italic;
+        text-align: justify;
+        width: 90%;
+    }
+}
+
+#right_col {
+    @include inside_wrapper;
+    article {
+        @include word-break(break-all);
+        @include border-radius(5px);
+        @include box-shadow;
+        border: 1px solid darken($main_color, 40%);
+        height: 100px;
+        margin-bottom: 10px;
+        background: darken($main_color, 20%);
+
+        h1 {
+            color: darken($text_color, 5%);
+            margin: 2px 0 0 5px;
+        }
+        p {
+            color: darken($text_color, 10%);
+            margin: 20px;
+            font-style: italic;
+        }
+    }
+    article:last-child {
+        margin: 0;
+    }
+}
+

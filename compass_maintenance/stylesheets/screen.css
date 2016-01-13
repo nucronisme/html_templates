@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*
+Dernière édition : Wed Jan 13 2016
+
+Copyright (c) nucronisme <nucronisme@gmail.com>
+
+Tous les fichiers et / ou le projet sont soumis
+à la licence MIT (The MIT License).
+Vous êtes priés de la respecter, quelque soit
+votre objectif.
+Plus d'informations sur cette licence ici :
+https://www.moo.com/fr/about/fonts/licences/mit-licence.html
+
+"Ce n'est pas l'homme qui arrête le temps,
+c'est le temps qui arrête l'homme." — François René Chateaubriand
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* line 31, ../sass/screen.scss */
+body {
+  font-family: "Roboto", serif;
+  color: white;
+  background: purple;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* line 38, ../sass/screen.scss */
+header {
+  background: #b300b3;
+  height: 35px;
+}
+/* line 42, ../sass/screen.scss */
+header span {
+  display: inline-block;
+  font-size: 20px;
+  height: 35px;
+  position: relative;
+  top: 5px;
+  left: 20px;
+}
+
+/* line 51, ../sass/screen.scss */
+#main_wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 56, ../sass/screen.scss */
+#left_col {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  margin-top: 200px;
+}
+/* line 59, ../sass/screen.scss */
+#left_col h1 {
+  font-weight: bold;
+  font-size: 3em;
+  margin: 0;
+}
+/* line 64, ../sass/screen.scss */
+#left_col h3 {
+  margin-left: 20px;
+}
+/* line 67, ../sass/screen.scss */
+#left_col p {
+  font-style: italic;
+  text-align: justify;
+  width: 90%;
+}
+
+/* line 74, ../sass/screen.scss */
+#right_col {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  margin-top: 200px;
+}
+/* line 76, ../sass/screen.scss */
+#right_col article {
+  word-break: break-all;
+  word-break: break-word;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  border: 1px solid black;
+  height: 100px;
+  margin-bottom: 10px;
+  background: #1a001a;
+}
+/* line 85, ../sass/screen.scss */
+#right_col article h1 {
+  color: #f2f2f2;
+  margin: 2px 0 0 5px;
+}
+/* line 89, ../sass/screen.scss */
+#right_col article p {
+  color: #e6e6e6;
+  margin: 20px;
+  font-style: italic;
+}
+/* line 95, ../sass/screen.scss */
+#right_col article:last-child {
+  margin: 0;
+}
