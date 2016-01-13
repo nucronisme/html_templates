@@ -1,0 +1,49 @@
+/*
+Dernière édition : Wed Jan 13 2016
+
+Copyright (c) nucronisme <nucronisme@gmail.com>
+
+Tous les fichiers et / ou le projet sont soumis
+à la licence MIT (The MIT License).
+Vous êtes priés de la respecter, quelque soit
+votre objectif.
+Plus d'informations sur cette licence ici :
+https://www.moo.com/fr/about/fonts/licences/mit-licence.html
+
+"Ce n'est pas l'homme qui arrête le temps,
+c'est le temps qui arrête l'homme." — François René Chateaubriand
+*/
+
+@import "compass";
+
+$main_color: yellow;
+$background: darken(brown, 40%);
+$progressbar_percent: 30%;
+
+body {
+    background: $main_color;
+    margin-top: 200px;
+}
+
+#background {
+    width: 900px;
+    height: 90px;
+    border: 1px solid black;
+    margin: auto;
+    @include border-radius(50px);
+    background-color: $background;
+}
+
+#container_progressbar {
+    position: relative;
+    left: 4px; top: 4px;
+    width: 890px; height: 80px;
+}
+
+#progressbar {
+    width: $progressbar_percent; height: 100%;
+    border: 1px solid darken($main_color, 50%);
+    margin: 0;
+    @include border-radius(50px);
+    background-color: $main_color;
+}
